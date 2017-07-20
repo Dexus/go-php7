@@ -4,9 +4,9 @@
 
 package engine
 
-// #cgo CFLAGS: -Iinclude/php7 -Isrc/php7 -Iinclude
-// #cgo CFLAGS: -I/opt/php7/include/php -I/opt/php7/include/php/Zend -I/opt/php7/include/php/TSRM -I/opt/php7/include/php/main
-// #cgo LDFLAGS: -L/opt/php7/lib -L/opt/curl/lib -L/opt/libmcrypt/lib -L/opt/zlib/lib -L/opt/openssl/lib -L/opt/libxml2/lib
-// #cgo LDFLAGS: -L/opt/php7/lib/php/extensions/debug-non-zts-20160303
-// #cgo LDFLAGS: -lphp7 -lm -ldl -lresolv -lcurl -lmcrypt -lz -lssl -lcrypto -lxml2 -lopcache
+// #cgo CFLAGS: -I/usr/include/php/20151012 -Iinclude/php7 -Isrc/php7 -Iinclude
+// #cgo CFLAGS: -I/usr/include/php/20151012 -I/usr/include/php/20151012/main -I/usr/include/php/20151012/TSRM -I/usr/include/php/20151012/Zend 
+// #cgo CFLAGS: -I/usr/include/php/20151012/ext -I/usr/include/php/20151012/ext/date/lib
+// #cgo LDFLAGS: -L/usr/lib/php/20151012  -L/usr/lib/x86_64-linux-gnu
+// #cgo LDFLAGS: -lphp7.0 -lm -ldl -lcrypt -lresolv -lcrypt -lz -lpcre -lrt -lm -ldl -lnsl -lcurl -lxml2 -lssl -lcrypto -lcrypt -lcrypt -lmcrypt -lopcache
 import "C"
